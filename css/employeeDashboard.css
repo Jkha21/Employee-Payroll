@@ -1,0 +1,11 @@
+.empDash-maincnt-cnt{
+    height: 106px;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.empDash-header-cnt{
+    display: flex;
+    flex-direction: column;
+}
