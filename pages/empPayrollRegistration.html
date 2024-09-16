@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration
+    </title>
+    <link rel="stylesheet" href="../css/empPayrollRegistration.css"/>
+    <script src="../js/empPayrollRegistration.js" defer ></script>
+</head>
+<body>
+        <div class="empDash-wrapper-cnt">
+            <div class="empDash-header-cnt">
+                <img src="../assets/logo.png" alt='profile image' class="empDash-profileIcon-cnt"/>
+                <div class="empDash-firstheader-cnt">
+                    <span class="empDash-employeeHeader-cnt">EMPLOYEE</span>
+                    <span class="empDash-payrollHeader-cnt">PAYROLL</span>
+                </div>                
+            </div>
+            <div class="empDash-mainBody-cnt">
+                <div class="empDash-submain-cnt">
+                    <span class="empDash-bodyHeader-cnt">Employee Payroll Form</span>
+                    <div class="empDash-formContent-cnt">
+                        <div class="empDash-label-cnt">
+                            <span class="empDash-name-cnt">Name</span>
+                            <span class="empDash-profileimage-cnt">Profile image</span>
+                            <span class="empDash-gender-cnt">Gender</span>
+                            <span class="empDash-department-cnt">Department</span>
+                            <span class="empDash-salary-cnt">Salary</span>
+                            <span class="empDash-date-cnt">Start Date</span>
+                            <span class="empDash-notes-cnt">Notes</span>
+                        </div>
+                      <div class="empDash-formElement-cnt">
+                            <input type="text" class="empDash-nameInput-cnt" id="name-cnt">
+                            <span id="empDash-nullValuecheck-cnt"></span>
+                            <form class="empDash-formcnt-cnt" id="profile-form-cnt">
+                                <div>
+                                    <input type="radio" class="empDash-radioButton-cnt" name="inputProfile" >
+                                    <img src="../assets/profile1.png" alt="optionImg" class="empDash-radioImg-cnt"/>
+                                </div>
+                                <div>
+                                    <input type="radio" class="empDash-radioButton-cnt" name="inputProfile">
+                                    <img src="../assets/profile2.png" alt="optionImg" class="empDash-radioImg-cnt"/>
+                                </div>
+                                <div>
+                                    <input type="radio" class="empDash-radioButton-cnt" name="inputProfile">
+                                    <img src="../assets/profile3.png" alt="optionImg" class="empDash-radioImg-cnt"/>
+                                </div>
+                                <div>
+                                    <input type="radio" class="empDash-radioButton-cnt" name="inputProfile">
+                                    <img src="../assets/profile4.png" alt="optionImg" class="empDash-radioImg-cnt"/>
+                                </div>
+                            </form>
+                            <form class="empDash-genderCnt-cnt" id="gender-form-cnt">
+                                <div>
+                                    <input type="radio" class="empDash-radioButton-cnt" name="input" id="maleInput">
+                                    <label class="empDash-genderLabel-cnt" for="maleInput">Male</label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="empDash-radioButton-cnt" name="input" id="femaleInput">
+                                    <label class="empDash-genderLabel-cnt" for="femaleInput">Female</label>
+                                </div>
+                            </form>
+                            <form class="empDash-checkboxcnt-cnt" id="department-form-cnt">
+                                <div>
+                                    <input type="checkbox" class="empDash-radioButton-cnt" id="inputDepartment1" name="inputCheckbox">
+                                    <label class="empDash-checkBoxLabel-cnt" for="inputDepartment1">HR</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="empDash-radioButton-cnt" id="inputDepartment2" name="inputCheckbox">
+                                    <label class="empDash-checkBoxLabel-cnt" for="inputDepartment2">Sales</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="empDash-radioButton-cnt" id="inputDepartment3" name="inputCheckbox">
+                                    <label class="empDash-checkBoxLabel-cnt" for="inputDepartment3">Finance</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="empDash-radioButton-cnt" id="inputDepartment4" name="inputCheckbox">
+                                    <label class="empDash-checkBoxLabel-cnt" for="inputDepartment4">Engineer</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="empDash-radioButton-cnt" id="inputDepartment5" name="inputCheckbox">
+                                    <label class="empDash-checkBoxLabel-cnt" for="inputDepartment5">Other</label>
+                                </div>
+                            </form>
+                            <form id="salary-form-cnt">
+                                <select id="salary-cnt" placeholder="Select Salary" class="empDash-salaryDropdown-cnt">
+                                    <option value="" disabled selected>Select Salary</option>
+                                    <option value="100000-200000">100000-200000</option>
+                                    <option value="200000-300000">200000-300000</option>
+                                    <option value="300000-400000">300000-400000</option>
+                                    <option value="400000-500000">400000-500000</option>
+                                </select>
+                            </form>
+                            <form class="empDash-datecnt-cnt" id="date-form-cnt">
+                                <select id="date-cnt" placeholder="date" class="empDash-dateValue-cnt">
+                                    <option value="" disabled selected>Date</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <select id="month-cnt" placeholder="month" class="empDash-monthValue-cnt">
+                                    <option value="" disabled selected>Month</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                                <select id="year-cnt" placeholder="year" class="empDash-yearValue-cnt">
+                                    <option value="" disabled selected>Year</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                            </form>
+                            <textarea class="empDash-notesTextCnt-cnt" id="notes-cnt"></textarea>
+                        </div>
+                    </div>
+                    <div class="empDash-actionButtons-cnt">
+                        <button class="empDash-cancelButton-cnt" type="button" id="cancelButton">Cancel</button>
+                        <button class="empDash-submitButton-cnt" type="button" id="submitButton">Submit</button>
+                        <button class="empDash-resetButton-cnt" type="button" id="resetButton">Reset</button>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+        
+</body>
+</html>
+
+

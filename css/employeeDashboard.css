@@ -1,11 +1,31 @@
-.empDash-maincnt-cnt{
-    height: 106px;
-    width: 100%;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
+body {
+    margin: 0px !important;
+    display: flex;
+    }
+
+    .empDash-wrapper-cnt{
+        min-height: 100vh;
+        width: 100%;
+    }
+
+
 
 .empDash-header-cnt{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: calc(100% - 1735px);
+    padding: 32px 81% 22px 10%;
+    height: 106px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    /* margin-bottom: 27px; */
 }
+
+
+.empDash-profileIcon-cnt{
+    /* padding: 30% 87% 25% 10%; */
+    width: 50px;
+    height: 47px;
+    opacity: 1;
+}
+
