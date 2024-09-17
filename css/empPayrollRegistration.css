@@ -1,4 +1,4 @@
-body {
+    body {
     margin: 0px !important;
     display: flex;
     }
@@ -21,7 +21,7 @@ body {
 
 
     .empDash-mainBody-cnt{
-        width: 100%;
+        width: calc(100% - 41%);
         height: 974px;
         background: #F7F7F7 0% 0% no-repeat padding-box;
         opacity: 1; 
@@ -297,7 +297,7 @@ body {
 
     .empDash-nameInput-cnt{
         margin-top: 40px;
-        margin-bottom: 41px;
+        margin-bottom: 11px;
         padding-left: 20px;
         height: 50px;
         background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -321,8 +321,8 @@ body {
         height: 45px;
         background: transparent url('img/Ellipse 1.png') 0% 0% no-repeat padding-box;
         opacity: 1;
-        margin-top: -10px;
-        margin-left: 13px;
+        margin-top: -15px;
+        margin-left: 10px;
     }
 
 
@@ -425,4 +425,30 @@ body {
         margin-top: -28px;
         margin-left: 27px;
     }
-    
+
+
+    #empDash-nullValuecheck-cnt{
+        margin-bottom: 14px;
+    }
+
+    #empDash-checkProfile-cnt{
+        margin-right: 10px;
+    }
+
+
+    #empDash-checkProfile-cnt{
+        margin-bottom: 15px;
+    }
+
+    #empDash-checkGender-cnt{
+        margin-bottom: 15px;
+    }
+
+    #empDash-checkDepartment-cnt{
+        margin-bottom: 15px;
+    }
+
+    #empDash-checkSalary-cnt{
+        margin-bottom: 10px;
+    }
+

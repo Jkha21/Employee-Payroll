@@ -1,25 +1,25 @@
 body {
     margin: 0px !important;
-    display: flex;
+    /* display: flex; */
     }
 
-    .empDash-wrapper-cnt{
-        min-height: 100vh;
-        width: 100%;
-    }
+.empDash-wrapper-cnt{
+    min-height: 100vh;
+    width: 100%;
+}
 
 
 
 .empDash-header-cnt{
     display: flex;
     flex-direction: row;
-    width: calc(100% - 1735px);
+    width: calc(100% - 91%);
     padding: 32px 81% 22px 10%;
-    height: 106px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    height: calc(106px - 54px);
+    background: white 0% 0% no-repeat padding-box;
     opacity: 1;
     /* margin-bottom: 27px; */
-}
+    }
 
 
 .empDash-profileIcon-cnt{
@@ -29,3 +29,267 @@ body {
     opacity: 1;
 }
 
+
+.empDash-mainBody-cnt{
+    width: calc(100% - 20%);
+    height: calc(974px - 95px);
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    opacity: 1; 
+    padding: 50px 10% 45px 10%;
+}
+
+.empDash-empDetailsHeader-cnt{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 43px;
+}
+
+.empDash-employeeDetails-cnt{
+    width: 217px;
+    height: 37px;
+    text-align: left;
+    font: normal normal bold 28px/25px Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+    opacity: 1;
+    margin-right: 60%;
+
+}
+
+.empDash-searchIcon-cnt{
+    width: 60px;
+    height: 55px;
+    border-radius: 15%;
+    margin-right: 21px;
+}
+
+.empDash-addUserBtn-cnt{
+    width: 215px;
+    height: 55px;
+    background: #82A70C 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    display: flex;
+    opacity: 1;
+    align-items: center;
+}
+
+.empDash-employeeHeader-cnt{
+    width: 127px;
+    height: 27px;
+    text-align: left;
+    font: normal normal bold 22px/25px Montserrat;
+    letter-spacing: 0px;
+    color: #82A70C;
+    text-transform: capitalize;
+    
+}
+
+.empDash-payrollHeader-cnt{
+    width: 107px;
+    height: 27px;
+    text-align: left;
+    font: normal normal bold 22px/25px Montserrat;
+    letter-spacing: 0px;
+    color: #42515F;
+    text-transform: capitalize;   
+}
+
+
+.empDash-mainBoxHeader-cnt{
+    height: 67px;
+    background: #42515F 0% 0% no-repeat padding-box;
+    border-radius: 3px 3px 0px 0px;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.empDash-namelabel-cnt{
+    width: 51px;
+    height: 24px;
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-left: 7%;
+    margin-right: 15%;
+}
+
+.empDash-genderlabel-cnt{
+    width: 68px;
+    height: 24px;
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-right: 12%;
+}
+
+.empDash-genderlabel-cnt{
+    width: 115px;
+    height: 24px;
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-right: 12%;
+}
+
+.empDash-departmentlabel-cnt{
+    width: 115px;
+    height: 24px;
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-right: 12%;
+
+}
+
+.empDash-salarylabel-cnt{
+    width: 67px;
+    height: 24px;
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-right: 6%;
+}
+
+
+.empDash-datelabel-cnt{
+    width: 102px;
+    height: 24px;
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-right: 4%;
+}
+
+.empDash-actions-cnt{
+    width: 102px;
+    height: 24px;
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-right: 3%;
+}
+
+
+.empDash-userDetails-cnt{
+    height: 65px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E3E3E3;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 32px 10px 34px;
+}
+
+
+.empDash-userImg-cnt{
+    width: 40px;
+    height: 40px;
+    background: transparent url('img/Ellipse 1.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-right: 2%;
+}
+
+.empDash-deleteUser-cnt{
+    width: 14px;
+    height: 18px;
+    background: #658292 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.empDash-editButton-cnt{
+    width: 14px;
+    height: 18px;
+    background: #658292 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+
+.empDash-userName-cnt{
+    width: 16%;
+    margin-right: 2%;
+}
+
+.empDash-userGender-cnt{
+    width: 3.5%;
+    margin-right: 13%;
+}
+
+
+.empDash-userDepartmentArray-cnt{
+    width: 7%;
+    margin-right: 10%;
+}
+
+
+.empDash-userSalary-cnt{
+    width: 3%;
+    margin-right: 7%;
+}
+
+.empDash-userStartDate-cnt{
+    width: 6%;
+    margin-right: 6%;
+}
+
+
+
+.empDash-actions-cnt{
+    width: 4.4%;
+}
+
+.empDash-addUserlabel2-cnt{
+    width: 89px;
+    height: 29px;
+    text-align: left;
+    font: normal normal normal 22px/29px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    margin-left: 18px;
+    margin-right: 42.5px;
+    /* margin-left: ; */
+}
+
+.empDash-addUserlabel1-cnt{
+    width: 24px;
+    height: 0px;
+    transform: translateY(-50%); /* Center horizontally */
+    border: 3px solid #FFFFFF;
+    opacity: 1
+}
+
+
+.empDash-addUserlabel3-cnt{
+    width: 0px;
+    height: 24px;
+    border: 3px solid #FFFFFF;
+    transform: translateX(-50%); /* Center vertically */
+    opacity: 1;
+}

@@ -7,6 +7,7 @@
     </title>
     <link rel="stylesheet" href="../css/empPayrollRegistration.css"/>
     <script src="../js/empPayrollRegistration.js" defer ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> 
 </head>
 <body>
         <div class="empDash-wrapper-cnt">
@@ -20,7 +21,8 @@
             <div class="empDash-mainBody-cnt">
                 <div class="empDash-submain-cnt">
                     <span class="empDash-bodyHeader-cnt">Employee Payroll Form</span>
-                    <div class="empDash-formContent-cnt">
+                    <form id="empDash-mainForm-cnt">
+                        <div class="empDash-formContent-cnt">
                         <div class="empDash-label-cnt">
                             <span class="empDash-name-cnt">Name</span>
                             <span class="empDash-profileimage-cnt">Profile image</span>
@@ -33,7 +35,7 @@
                       <div class="empDash-formElement-cnt">
                             <input type="text" class="empDash-nameInput-cnt" id="name-cnt">
                             <span id="empDash-nullValuecheck-cnt"></span>
-                            <form class="empDash-formcnt-cnt" id="profile-form-cnt">
+                            <div class="empDash-formcnt-cnt" id="profile-form-cnt">
                                 <div>
                                     <input type="radio" class="empDash-radioButton-cnt" name="inputProfile" >
                                     <img src="../assets/profile1.png" alt="optionImg" class="empDash-radioImg-cnt"/>
@@ -50,8 +52,9 @@
                                     <input type="radio" class="empDash-radioButton-cnt" name="inputProfile">
                                     <img src="../assets/profile4.png" alt="optionImg" class="empDash-radioImg-cnt"/>
                                 </div>
-                            </form>
-                            <form class="empDash-genderCnt-cnt" id="gender-form-cnt">
+                            </div>
+                            <span id="empDash-checkProfile-cnt"></span>
+                            <div class="empDash-genderCnt-cnt" id="gender-form-cnt">
                                 <div>
                                     <input type="radio" class="empDash-radioButton-cnt" name="input" id="maleInput">
                                     <label class="empDash-genderLabel-cnt" for="maleInput">Male</label>
@@ -60,8 +63,9 @@
                                     <input type="radio" class="empDash-radioButton-cnt" name="input" id="femaleInput">
                                     <label class="empDash-genderLabel-cnt" for="femaleInput">Female</label>
                                 </div>
-                            </form>
-                            <form class="empDash-checkboxcnt-cnt" id="department-form-cnt">
+                            </div>
+                            <span id="empDash-checkGender-cnt"></span>
+                            <div class="empDash-checkboxcnt-cnt" id="department-form-cnt">
                                 <div>
                                     <input type="checkbox" class="empDash-radioButton-cnt" id="inputDepartment1" name="inputCheckbox">
                                     <label class="empDash-checkBoxLabel-cnt" for="inputDepartment1">HR</label>
@@ -82,8 +86,9 @@
                                     <input type="checkbox" class="empDash-radioButton-cnt" id="inputDepartment5" name="inputCheckbox">
                                     <label class="empDash-checkBoxLabel-cnt" for="inputDepartment5">Other</label>
                                 </div>
-                            </form>
-                            <form id="salary-form-cnt">
+                            </div>
+                            <span id="empDash-checkDepartment-cnt"></span>
+                            <div id="salary-form-cnt">
                                 <select id="salary-cnt" placeholder="Select Salary" class="empDash-salaryDropdown-cnt">
                                     <option value="" disabled selected>Select Salary</option>
                                     <option value="100000-200000">100000-200000</option>
@@ -91,8 +96,9 @@
                                     <option value="300000-400000">300000-400000</option>
                                     <option value="400000-500000">400000-500000</option>
                                 </select>
-                            </form>
-                            <form class="empDash-datecnt-cnt" id="date-form-cnt">
+                            </div>
+                            <span id="empDash-checkSalary-cnt"></span>
+                            <div class="empDash-datecnt-cnt" id="date-form-cnt">
                                 <select id="date-cnt" placeholder="date" class="empDash-dateValue-cnt">
                                     <option value="" disabled selected>Date</option>
                                     <option value="1">1</option>
@@ -160,15 +166,18 @@
                                     <option value="2023">2023</option>
                                     <option value="2024">2024</option>
                                 </select>
-                            </form>
+                            </div>
+                            <span id="empDash-checkStartDate-cnt"></span>
                             <textarea class="empDash-notesTextCnt-cnt" id="notes-cnt"></textarea>
+                            <span id="empDash-checkNotes-cnt"></span>
                         </div>
-                    </div>
-                    <div class="empDash-actionButtons-cnt">
+                        </div>
+                        <div class="empDash-actionButtons-cnt">
                         <button class="empDash-cancelButton-cnt" type="button" id="cancelButton">Cancel</button>
                         <button class="empDash-submitButton-cnt" type="button" id="submitButton">Submit</button>
                         <button class="empDash-resetButton-cnt" type="button" id="resetButton">Reset</button>
-                    </div>                        
+                        </div>                        
+                    </form>
                 </div>
             </div>
         </div>
