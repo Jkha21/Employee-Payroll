@@ -43,55 +43,57 @@ submitBtnRef.addEventListener('click', (e) =>{
         nameErrorlabel.textContent = "";
     }
     
+
     let selectedProfile = null;
-    for(let element of profileRef){
+    profileRef.forEach(element => {
         if(element.checked){
             selectedProfile = element.nextElementSibling.getAttribute('src');
         }
-        if(!selectedProfile){
-            checkProfile.textContent = "Error! Select Profile";
-            checkProfile.style.color = 'red';
-            checkProfile.style.fontSize = '14px';
-            checkProfile.style.fontWeight = 'bold';
-            return;
-        }else{
-            checkProfile.textContent = "";
-        }
+    })
+    if(!selectedProfile){
+        checkProfile.textContent = "Error! Select Profile";
+        checkProfile.style.color = 'red';
+        checkProfile.style.fontSize = '14px';
+        checkProfile.style.fontWeight = 'bold';
+        return;
+    }else{
+        checkProfile.textContent = "";
     }
     
+
     let selectedGender = null;
-    for(let element of genderRef){
+    genderRef.forEach(element => {
         if(element.checked){
             selectedGender = element.nextElementSibling.textContent;
         }
-        if(!selectedGender){
-            checkGender.textContent = "Error! Select Gender"; 
-            checkGender.style.color = 'red';
-            checkGender.style.fontSize = '14px';
-            checkGender.style.fontWeight = 'bold';
-            return;
-        }else{
-            checkGender.textContent = ""; 
-        }
-    };
+    });
+    if(!selectedGender){
+        checkGender.textContent = "Error! Select Gender"; 
+        checkGender.style.color = 'red';
+        checkGender.style.fontSize = '14px';
+        checkGender.style.fontWeight = 'bold';
+        return;
+    }else{
+        checkGender.textContent = ""; 
+    }
     
     
     
     let selectedDepartmentObj = [];
-    for(let element of departmentRef){
+    departmentRef.forEach(element => {
         if(element.checked){
             selectedDepartmentObj.push(element.nextElementSibling.textContent);
         }
-        if(!selectedDepartmentObj.length){
-            checkDepartment.textContent = 'Error! Select the department';
-            checkDepartment.style.color = 'red';
-            checkDepartment.style.fontSize = '14px';
-            checkDepartment.style.fontWeight = 'bold';
-            return;
-        }else{
-            checkDepartment.textContent = "";
-        }
-    }
+    });
+    if(!selectedDepartmentObj.length){
+        checkDepartment.textContent = 'Error! Select the department';
+        checkDepartment.style.color = 'red';
+        checkDepartment.style.fontSize = '14px';
+        checkDepartment.style.fontWeight = 'bold';
+        return;
+    }else{
+        checkDepartment.textContent = "";
+    };
 
 
     let selectedSalary = salaryRef.value;
@@ -143,21 +145,38 @@ submitBtnRef.addEventListener('click', (e) =>{
         notes: notesContent
     }
     
-    
-    $.ajax({
-        url: 'http://localhost:3001/employees',
-        type: 'POST',
-        contentType: 'application/json',
-        data: JSON.stringify(empObj),
-        success: function() {
-            console.log('Data saved successfully');
-            resetform();
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            console.error('Error:', textStatus, errorThrown);
-        }
-    });
-        
+    const getUserId = localStorage.getItem('id');
+    if(getUserId){
+        $.ajax({
+            url: `http://localhost:3001/employees/${getUserId}`,
+            type: 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify(empObj),
+            success: function() {
+                console.log('Data saved successfully');
+                resetform();
+                localStorage.removeItem('id');
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.error('Error:', textStatus, errorThrown);
+            }
+        });
+    }else{
+        $.ajax({
+            url: `http://localhost:3001/employees/`,
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(empObj),
+            success: function() {
+                console.log('Data saved successfully');
+                resetform();
+                localStorage.removeItem('id');
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.error('Error:', textStatus, errorThrown);
+            }
+        });
+    }
 });
 
 
@@ -187,3 +206,5 @@ function nameValidator(name){
 // Json server
 // Jquery
 // Practice Folder
+
+

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Dashboard</title>
     <link rel="stylesheet" href="../css/employeeDashboard.css"/>
+    <script src="../js/employeeDashboardJquery.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> 
 </head>
 <body>
     <div class="wrapper">
@@ -19,12 +21,19 @@
             <div class="empDash-submainCnt-cnt">
                 <div class="empDash-empDetailsHeader-cnt">
                     <span class="empDash-employeeDetails-cnt">Employee Details</span>
-                    <img src="../assets/search-icon.jpg" alt="search" class="empDash-searchIcon-cnt">
-                    <button class="empDash-addUserBtn-cnt" type="button">
-                        <span class="empDash-addUserlabel1-cnt"></span>
-                        <span class="empDash-addUserlabel3-cnt"></span>
-                        <span class="empDash-addUserlabel2-cnt">Add User</span>
-                    </button>
+                    <div class="search-input-container" id="search-input-container">
+                        <input type="text" class="search-input" id="search-input" placeholder="Type to search...">
+                        <span class="close-btn" id="close-btn">&times;</span>
+                    </div>
+                    <img src="../assets/search-icon.jpg" alt="search" class="empDash-searchIcon-cnt" id="search-icon" style="cursor: pointer;">
+                    <div class="empDash-search&create-cnt">
+                        <a href="../pages/empPayrollRegistration.html", target="_blank", class="empDash-reglink-cnt">
+                        <button id="empDash-addUserBtn-cnt" type="button">
+                            <span class="empDash-addUserlabel1-cnt">&#43;</span>
+                            <span class="empDash-addUserlabel2-cnt">Add User</span>
+                        </button>
+                        </a>
+                    </div>
                 </div>
                 <div class="empDash-mainBox-cnt">
                     <div class="empDash-mainBoxHeader-cnt">
@@ -36,23 +45,7 @@
                         <span class="empDash-actions-cnt">ACTIONS</span>
                     </div>
                     <div class="empDash-userDetails-cnt">
-                        <img src="../assets/profile1.png" alt="userImage" class="empDash-userImg-cnt">
-                        <span class="empDash-userName-cnt">Amarpa Shankha Keerthi Kumar</span>
-                        <span class="empDash-userGender-cnt">Female</span>
-                        <div class="empDash-userDepartmentArray-cnt">
-                            <span class="empDash-userDepartment-cnt">Sales</span>
-                            <span class="empDash-userDepartment-cnt">HR</span>
-                            <span class="empDash-userDepartment-cnt">Finance</span>
-                        </div>
-                        <span class="empDash-userSalary-cnt">$ 10000</span>
-                        <span class="empDash-userStartDate-cnt">29 Oct 2019</span>
-                        <div class="empDash-userActions-cnt">
-                            <button type="button" class="empDash-deleteBtn-cnt">
-                                <img src="../assets/trash.jpg" alt="delete" class="empDash-deleteUser-cnt">  
-                            </button>
-                            <button class="empDash-editBtn-cnt">
-                                <img src="../assets/edit.jpg" alt="edit" class="empDash-editButton-cnt">
-                            </button>
+                            
                         </div>
                     </div>
                 </div>

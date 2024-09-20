@@ -1,7 +1,8 @@
 body {
     margin: 0px !important;
     /* display: flex; */
-    }
+}
+
 
 .empDash-wrapper-cnt{
     min-height: 100vh;
@@ -46,7 +47,7 @@ body {
 }
 
 .empDash-employeeDetails-cnt{
-    width: 217px;
+    width: 18%;
     height: 37px;
     text-align: left;
     font: normal normal bold 28px/25px Roboto;
@@ -64,8 +65,8 @@ body {
     margin-right: 21px;
 }
 
-.empDash-addUserBtn-cnt{
-    width: 215px;
+#empDash-addUserBtn-cnt{
+    /* width: 100%; */
     height: 55px;
     background: #82A70C 0% 0% no-repeat padding-box;
     border-radius: 5px;
@@ -97,13 +98,14 @@ body {
 
 
 .empDash-mainBoxHeader-cnt{
-    height: 67px;
+    height: calc(67px - 42px);
     background: #42515F 0% 0% no-repeat padding-box;
     border-radius: 3px 3px 0px 0px;
     opacity: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 21px 2.5% 21px 7%;
 }
 
 .empDash-namelabel-cnt{
@@ -115,24 +117,13 @@ body {
     color: #FFFFFF;
     text-transform: uppercase;
     opacity: 1;
-    margin-left: 7%;
+    /* margin-left: 7%; */
     margin-right: 15%;
 }
 
-.empDash-genderlabel-cnt{
-    width: 68px;
-    height: 24px;
-    text-align: left;
-    font: normal normal medium 18px/24px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    opacity: 1;
-    margin-right: 12%;
-}
 
 .empDash-genderlabel-cnt{
-    width: 115px;
+    width: 45px;
     height: 24px;
     text-align: left;
     font: normal normal medium 18px/24px Roboto;
@@ -152,7 +143,7 @@ body {
     color: #FFFFFF;
     text-transform: uppercase;
     opacity: 1;
-    margin-right: 12%;
+    margin-right: 16%;
 
 }
 
@@ -165,12 +156,12 @@ body {
     color: #FFFFFF;
     text-transform: uppercase;
     opacity: 1;
-    margin-right: 6%;
+    margin-right: 10%;
 }
 
 
 .empDash-datelabel-cnt{
-    width: 102px;
+    width: 10%;
     height: 24px;
     text-align: left;
     font: normal normal medium 18px/24px Roboto;
@@ -178,7 +169,7 @@ body {
     color: #FFFFFF;
     text-transform: uppercase;
     opacity: 1;
-    margin-right: 4%;
+    margin-right: 5%;
 }
 
 .empDash-actions-cnt{
@@ -191,11 +182,13 @@ body {
     text-transform: uppercase;
     opacity: 1;
     margin-right: 3%;
+    margin-left: 3%;
 }
 
 
-.empDash-userDetails-cnt{
-    height: 65px;
+/* .empDash-userDetails-cnt{
+    height: auto;
+    min-height: 65px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #E3E3E3;
     opacity: 1;
@@ -203,25 +196,25 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 10px 32px 10px 34px;
-}
+} */
 
 
-.empDash-userImg-cnt{
+#empDash-userImg-cnt{
     width: 40px;
     height: 40px;
-    background: transparent url('img/Ellipse 1.png') 0% 0% no-repeat padding-box;
+    background: transparent 0% 0% no-repeat padding-box;
     opacity: 1;
     margin-right: 2%;
 }
 
-.empDash-deleteUser-cnt{
+#empDash-deleteUser-cnt{
     width: 14px;
     height: 18px;
     background: #658292 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 
-.empDash-editButton-cnt{
+#empDash-editButton-cnt{
     width: 14px;
     height: 18px;
     background: #658292 0% 0% no-repeat padding-box;
@@ -229,12 +222,12 @@ body {
 }
 
 
-.empDash-userName-cnt{
+#empDash-userName-cnt{
     width: 16%;
     margin-right: 2%;
 }
 
-.empDash-userGender-cnt{
+#empDash-userGender-cnt{
     width: 3.5%;
     margin-right: 13%;
 }
@@ -246,12 +239,12 @@ body {
 }
 
 
-.empDash-userSalary-cnt{
+#empDash-userSalary-cnt{
     width: 3%;
     margin-right: 7%;
 }
 
-.empDash-userStartDate-cnt{
+#empDash-userStartDate-cnt{
     width: 6%;
     margin-right: 6%;
 }
@@ -278,11 +271,10 @@ body {
 }
 
 .empDash-addUserlabel1-cnt{
-    width: 24px;
-    height: 0px;
-    transform: translateY(-50%); /* Center horizontally */
-    border: 3px solid #FFFFFF;
-    opacity: 1
+    opacity: 1;
+    font-size: 36px;
+    color: white;
+    margin-left: auto;
 }
 
 
@@ -293,3 +285,158 @@ body {
     transform: translateX(-50%); /* Center vertically */
     opacity: 1;
 }
+
+
+
+#empDash-userProfile-cnt{
+    width: 45px;
+    height: 45px;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;   
+    /* padding-left: 37px; */
+    /* padding-right: 10px; */
+}
+
+#userDash-userDataRow-cnt{
+    width: 100%;
+    height: 67px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E3E3E3;
+    opacity: 1; 
+    border-spacing: 0px;
+}
+
+
+#empDash-edit-cnt{
+    width: 14px;
+    height: 18px;
+    background: #658292 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#empDash-trash-cnt{
+    width: 14px;
+    height: 18px;
+    background: #658292 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+
+#empDash-name-cnt{
+    width: 16%;
+    height: 21px;
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    opacity: 1;
+}
+
+
+#empDash-gender-cnt{
+    width: 10%;
+
+}
+
+#empDash-depttag-cnt{
+    text-align: left;
+    font: normal normal normal 18px/19px Roboto;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    text-transform: capitalize;
+    opacity: 1;
+    background: #E9FEA5 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+#empDash-salary-cnt{
+    width: 13%;
+    height: 21px;
+    padding-left: 2%;
+    margin-right: 6.8%;
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    opacity: 1;
+}
+
+#empDash-startDate-cnt{
+    width: 17%;
+    height: 21px;
+    padding-left: 5%;
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    opacity: 1;
+}
+
+#empDash-actions-cnt{
+    height: 18px;
+    padding-left: 2%;
+    opacity: 1;
+} 
+
+#empDash-userTable-cnt{
+    width: 100%;
+    border-spacing: 0px;
+}
+
+#empDash-dept-cnt{
+    padding-left: 3%;
+    width: 24%;
+    margin-right: 9%
+}
+
+#empDash-imgCnt-cnt{
+    width: calc(111px - 66px);
+    padding-left: 34px;
+    padding-right: 32px;
+    border-right: 0px;
+}
+
+
+#empDash-imgProfile-cnt{
+    margin-left: 32px;
+    margin-right: 30px;
+}
+
+#empReg-imgCnt-cnt{
+    width: 45px;
+    height: 35px;
+}
+
+
+
+#search-input{
+    width: auto;
+    height: 45px;
+    padding-left: 10px;
+}
+
+
+.search-input-container{
+    display: flex;
+    flex-direction: row;
+    width: 7%;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.adjustedmargin{
+    margin-right: 43%;
+}
+
+.close-btn{
+    font-size: 32px;
+    color: grey;
+    font-weight: 700;
+    margin-left: -28px;
+}
+
+.empDash-reglink-cnt{
+    text-decoration: none;
+}
+
